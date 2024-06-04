@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+      <!--Render all elements normally -->
+      <link rel="stylesheet" href="./css/normalize.css">
+      <!-- Main template css file-->
+      <link rel="stylesheet" href="./css/style.css">
+      <!-- Font awesome library -->
+      <link rel="stylesheet" href="./css/all.min.css">
+      <!-- Fonts for main project-->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Cairo:slnt,wght@1,200..1000&display=swap" rel="stylesheet">
+     
+</head>
+<body>
+      <!-- Start header-->
+      <header>
+        <div class="container">  
+              <a href="#" class="logo">Logo
+                <img src="" alt="" >
+              </a>
+              <nav>
+            <i class="fas fa-bars toggle-menu" style="font-size: 30px;"></i>
+                <ul>
+                    <li> <a href="#" class="active" data-i18n="home">Home</a></li>
+                    <li> <a href="#about"  data-i18n="about">About</a></li>
+                    <li> <a href="#features"  data-i18n="features">Features</a></li>
+                    <li> <a href="#services"  data-i18n="services">Services</a></li>
+                    <li> <a href="#contact" data-i18n="contact">Contact</a></li>
+                    <li> <select >
+                      <option class="a" value="en" selected  data-i18n="english">English</option>
+                      <option class="b" value="ar"  data-i18n="arabic">العربية</option>
+                    </select>
+                  </li>
+                </ul> 
+              </nav>
+        </div>
+    </header> 
+      <!-- End Header -->
+    <!-- Start Landing -->
+    <div class="landing">
+        <div class="container">
+          <div class="text">
+            <h1  data-i18n="landing_h1">Welcome, To our company</h1>
+            <p data-i18n="landing_p">Here Iam gonna share everything about my company.</p>
+          </div>
+          <div class="image">
+            <img decoding="async" src="images/landing-page.svg" alt="" />
+          </div>
+        </div>
+        <a href="#features" class="go-down">
+          <i class="fas fa-angle-double-down fa-2x"></i>
+        </a>
+      </div>
+      <!-- End Landing -->
+      <ul class="social-icons center socialIcons">
+          <a class="facebook" href="https://wa.me/00971566949815"><i class="fa-brands fa-whatsapp green"></i></a>
+      </ul>
+     
+          <!-- Start About -->
+    <div class="about" id="about">
+        <h2 class="main-title" data-i18n="about">About us</h2>
+        <div class="container">
+          <div class="main-heading">
+            <p data-i18n="about_p">
+              We have a specialized team of website developers and designers who are ready to work to put your company at the top through a strong and attractive website, ensuring that customers can access your company’s website easily and simply. We create websites that are visually attractive, fast, and most importantly, secure.
+            </p>
+            
+          </div>
+        </div>
+      </div>
+      <!-- End About -->
+      <!--staret stats-->
+      <div class="stats">
+        <h2 data-i18n="stats_h2">Our Awesome Stats</h2>
+        <div class="container">
+          <div class="box">
+            <i class="far fa-user fa-2x fa-fw"></i>
+            <span class="number">7</span>
+            <span class="text" data-i18n="stats_years">Years of experience</span>
+          </div>
+          <div class="box">
+            <i class="fas fa-code fa-2x fa-fw"></i>
+            <span class="number">256</span>
+            <span class="text" data-i18n="stats_completed">Completed projects</span>
+          </div>
+          <div class="box">
+            <i class="far fa-envelope fa-2x fa-fw"></i>
+            <span class="number">1,765</span>
+            <span class="text" data-i18n="stats_mail">mail sent</span>
+          </div>
+          <div class="box">
+            <i class="fa-solid fa-fire fa-2x"></i>
+            <span class="number" data-goal="150">150</span>
+            <span class="text" data-i18n="stats_clients">clients</span>
+          </div>
+        </div>
+      </div>
+      <!-- End Stats -->
+       <!-- Start Features -->
+    <div class="features" id="features">
+      <h2 class="main-title" data-i18n="features">Features</h2>
+      <div class="container">
+        <div class="box quality">
+          <div class="img-holder"><img decoding="async" src="images/features-01.jpg" alt="" /></div>
+          <h2 data-i18n="features_quality_h2">Gather Requirements </h2>
+          <p data-i18n="features_quality_p">Requirements Create a list of customer requirements</p>
+          <a href="#"  data-i18n="more">More</a>
+        </div>
+        <div class="box passion">
+          <div class="img-holder"><img decoding="async" src="images/features-03.jpg" alt="" /></div>
+          <h2 data-i18n="features_passion_h2">Planning and Design</h2>
+          <p data-i18n="features_passion_p">Gathering information and requirements, then creating the basic design to show how the site will work</p>
+          <a href="#" data-i18n="more">More</a>
+        </div>
+        <div class="box time">
+          <div class="img-holder"><img decoding="async" src="images/features-02.jpg" alt="" /></div>
+          <h2 data-i18n="features_time_h2">Commencement of implementation </h2>
+          <p data-i18n="features_time_p">the site will be implemented according to the agreed upon design</p>
+          <a href="#" data-i18n="more">More</a>
+        </div>
+        <div class="box passion">
+          <div class="img-holder"><img decoding="async" src="images/features-03.jpg" alt="" /></div>
+          <h2 data-i18n="features_pass2_h2">Quality assurance </h2>
+          <p data-i18n="features_pass2_p">The system is tested with the utmost precision to address any error or malfunction</p>
+          <a href="#" data-i18n="more">More</a>
+        </div>
+        <div class="box time">
+          <div class="img-holder"><img decoding="async" src="images/features-02.jpg" alt="" /></div>
+          <h2 data-i18n="features_time2_h2">Launch and Deployment</h2>
+          <p data-i18n="features_time2_p">When everything is working properly the site is launched</p>
+          <a href="#" data-i18n="more">More</a>
+        </div>
+        <div class="box quality">
+          <div class="img-holder"><img decoding="async" src="images/features-01.jpg" alt="" /></div>
+          <h2 data-i18n="features_quality2_h2">Complete Maintenance </h2>
+          <p data-i18n="features_quality2_p">We provide complete maintenance and maintenance of your software</p>
+          <a href="#" data-i18n="more">More</a>
+        </div>
+      </div>
+    </div>
+    <!-- End Features -->
+          <!-- Start services--> 
+      <div class="services">
+    <h2 class="main-title" id="services" data-i18n="services">Services</h2>
+   
+        <div class="row">
+          <div class="column">
+            <div class="card">
+              <div class="icon-wrapper">
+                <i class="fa-solid fa-code"></i>
+              </div>
+              <h3 data-i18n="services_h3_1">Web Design</h3>
+              <p data-i18n="services_p_1">
+                Get an attractive and elegant design for your website, which will help you attract more visitors and give a distinctive impression to your customers </p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="card">
+              <div class="icon-wrapper">
+                <i class="fa-brands fa-android"></i>
+              </div>
+              <h3 data-i18n="services_h3_2">Phone applications</h3>
+              <p data-i18n="services_p_2">
+  We develop applications that meet companies' needs, improve the performance of companies' activities and provide innovative and effective solutions.
+              </p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="card">
+              <div class="icon-wrapper">
+                <i class="fas fa-wrench"></i>
+              </div>
+              <h3 data-i18n="services_h3_3">Website maintenance</h3>
+              <p data-i18n="services_p_3">
+                We provide maintenance services for websites and electronic stores, updating them, and addressing any problems you may encounter with your site
+              </p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="card">
+              <div class="icon-wrapper">
+                <i class="fa-brands fa-searchengin"></i>
+              </div>
+              <h3 data-i18n="services_h3_4">SEO</h3>
+              <p data-i18n="services_p_4">
+                For companies that need cheap traffic and improve search results in a free way and without paying the cost of each visit.
+              </p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="card">
+              <div class="icon-wrapper">
+                <i class="fa-brands fa-instagram"></i>
+              </div>
+              <h3 data-i18n="services_h3_5">Social media marketing</h3>
+              <p data-i18n="services_p_5">
+                For projects that need to display ads to the target market through social networks.
+              </p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="card">
+              <div class="icon-wrapper">
+                <i class="fa-solid fa-gear"></i>
+              </div>
+              <h3 data-i18n="services_h3_6">Service</h3>
+              <p data-i18n="services_p_6">
+We provide services for anything you want related to developing, modifying or improving websites
+              </p>
+            </div>
+          </div>
+        
+        </div>
+      </div>
+      <!-- End services-->
+  <!-- Start Contact-->
+  <h2 class="main-title" id="contact" data-i18n="contact">contact</h2>
+      <div class="contact">
+        <div class="container">
+          <div class="col">
+            <div class="text">
+              <h2 data-i18n="contact_h2">Do you have a project idea?</h2>
+              <p data-i18n="contact_p">We are always excited to hear great and innovative ideas and help turn them into a distinguished and successful website</p>
+              <div><img src="images/contact-us.png" alt=""></div>
+            </div>
+          </div>
+          <div class="col">
+            <form >
+              <div class="row">
+                <div class="form-group">
+                  <input type="text" class="form-control" name="name" id="name" placeholder="Your name">
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-group">
+                  <input type="text" class="form-control" name="email" id="email_id" placeholder="Email">
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-group">
+                  <textarea class="form-control" name="message" id="message" cols="3" rows="7" placeholder="Write your message" aria-setsize="0"></textarea>
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-group">
+                  <button onclick="sendMail()" class="button" data-i18n="send">send</button> 
+                </div>
+              </div>
+              <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+    <script type="text/javascript">
+      (function(){
+          emailjs.init("sOu90vClYffFwhieC");
+      })();
+    </script>
+            </form>
+          </div>
+        </div>
+      </div>
+    <!-- End contact-->
+      <!-- Start footer -->
+      <footer>
+        <div class="footerContainer">
+            <div class="socialIcons">
+        <a class="facebook" href="https://wa.me/00971566949815" ><i class="fa-brands fa-whatsapp green"></i></a>
+        <a class="facebook" href="" ><i class="fa-brands fa-facebook facebook"></i></a>
+        <a class="twitter" href="" ><i class="fa-brands fa-x-twitter twitter"></i></a>
+        <a class="youtube" href="" ><i class="fa-brands fa-youtube youtube"></i></a>
+        <a class="snap" href="" ><i class="fa-brands fa-snapchat snapchat"></i></a>
+        <a class="instagram" href="#"><i class="fa-brands fa-instagram purple"></i></a>
+        <a class="linkedin" href="#"><i class="fa-brands fa-linkedin linkedin"></i></a>
+            </div>
+            <div class="footerNav">
+                <ul><li><a href="#home" data-i18n="home">Home</a></li>
+                    <li><a href="#about"  data-i18n="about">About</a></li>
+                    <li><a href="#features"  data-i18n="features">Features</a></li>
+                    <li><a href="#services"  data-i18n="services">services</a></li>
+                    <li><a href="#contact"  data-i18n="contact">contact</a></li>
+                </ul>
+            </div>
+            
+        </div>
+        <div class="footerBottom">
+            <p>Copyright &copy;2024; All right reserved</p>
+        </div>
+    </footer>
+    <!-- End footer -->
+      <script src="script.js" type="module"></script>
+</body>
+</html>
